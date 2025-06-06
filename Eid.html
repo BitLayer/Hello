@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eid Mubarak, My Love!</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f0e68c, #add8e6, #dda0dd); /* Soft gradient background */
+            animation: backgroundAnimation 15s ease infinite alternate;
+        }
+
+        @keyframes backgroundAnimation {
+            0% { background-position: 0% 0%; }
+            100% { background-position: 100% 100%; }
+        }
+
+        .container {
+            text-align: center;
+            position: relative;
+            z-index: 10;
+        }
+
+        .message {
+            font-size: 4em;
+            color: #8b0000; /* Deep red for emphasis */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            opacity: 0;
+            animation: fadeIn 3s ease-in-out forwards;
+            animation-delay: 1s; /* Delay message appearance */
+        }
+
+        .sub-message {
+            font-size: 2em;
+            color: #4682b4; /* Steel blue */
+            margin-top: 20px;
+            opacity: 0;
+            animation: fadeIn 3s ease-in-out forwards;
+            animation-delay: 3s; /* Delay sub-message appearance */
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Floating Elements */
+        .floating-element {
+            position: absolute;
+            opacity: 0.8;
+            animation: float 10s ease-in-out infinite alternate;
+            z-index: 5;
+        }
+
+        .star {
+            font-size: 3em;
+            color: #ffd700; /* Gold */
+        }
+
+        .heart {
+            font-size: 3em;
+            color: #ff69b4; /* Hot pink */
+        }
+
+        .moon {
+            font-size: 3em;
+            color: #ffffff; /* White */
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(10deg); }
+            100% { transform: translateY(0) rotate(0deg); }
+        }
+
+        /* Specific animations for each floating element */
+        .floating-element:nth-child(1) {
+            top: 10%;
+            left: 15%;
+            animation-delay: 0s;
+            animation-duration: 12s;
+        }
+        .floating-element:nth-child(2) {
+            top: 20%;
+            right: 10%;
+            animation-delay: 2s;
+            animation-duration: 10s;
+        }
+        .floating-element:nth-child(3) {
+            bottom: 15%;
+            left: 5%;
+            animation-delay: 4s;
+            animation-duration: 14s;
+        }
+        .floating-element:nth-child(4) {
+            bottom: 10%;
+            right: 20%;
+            animation-delay: 1s;
+            animation-duration: 11s;
+        }
+        .floating-element:nth-child(5) {
+            top: 5%;
+            left: 50%;
+            animation-delay: 3s;
+            animation-duration: 13s;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="message">Eid Mubarak!</div>
+        <div class="sub-message">To my dearest love, with all my heart. ❤️</div>
+    </div>
+
+    <div class="floating-element star" style="top: 10%; left: 15%;">⭐</div>
+    <div class="floating-element heart" style="top: 20%; right: 10%;">❤️</div>
+    <div class="floating-element moon" style="bottom: 15%; left: 5%;">🌙</div>
+    <div class="floating-element star" style="bottom: 10%; right: 20%;">⭐</div>
+    <div class="floating-element heart" style="top: 5%; left: 50%;">❤️</div>
+
+    <script>
+        // You can add more complex JavaScript animations here if needed.
+        // For now, CSS handles most of the animations.
+    </script>
+</body>
+</html>
